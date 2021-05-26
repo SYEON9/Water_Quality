@@ -15,11 +15,11 @@ class adam:
     :return: The biggest int value
     :rtype: int
     """
-    ret = x[0]
-    for i in range(1, len(x)):
-        if x[i] > ret:
-            ret = x[i]
-    return ret
+        ret = x[0]
+        for i in range(1, len(x)):
+            if x[i] > ret:
+                ret = x[i]
+        return ret
 
 a = adam()
 print('sum_two() result = ', a.sum_two(1, 3))
