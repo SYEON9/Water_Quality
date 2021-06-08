@@ -27,3 +27,15 @@ git clone ......
 cd for_jenkins_20181466
 pip3 install -r requirements.txt
 ```
+### How to use
+
+TODO
+
+
+#### Version History
+
+* v.0.0.0 : 개발중
+
+#### Concats
+
+#### License
