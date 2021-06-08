@@ -22,11 +22,25 @@
 
 #### How to install
 
+* Clone & Install
+
 ```sh
 git clone ......
 cd for_jenkins_20181466
 pip3 install -r requirements.txt
 ```
+
+* Append two lines below to `~/.bashrc` file.
+```sh
+~$ cat >> ~/.bashrc
+export FOR_JENKINS_20181466=/home/ubuntu/for_jenkins_20181466
+export PYTHONPATH=$PYTHONPATH:$FOR_JENKINS_20181466
+Ctrl+d
+
+~$source ~/.bashrc
+```
+
+
 ### How to use
 
 TODO
