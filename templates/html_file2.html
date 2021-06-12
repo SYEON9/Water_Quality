@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>#지방 상수도와 다목적 댐의 수질 데이터 확인</h1>
+    <div>
+        <p>연결이 성공되면 아래에 데이터가 뜰거야!</p>
+        <p>---------------------------------------<p>
+        {% for i in data %}
+            <p>지역: {{i.name}}</p>
+	    <p>정수장: {{i.purification_plant[0]}}</p>
+            <p>다목적댐: {{i.multiPurpose_dam[0]}}</p>
+            <p>---------------</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
+
