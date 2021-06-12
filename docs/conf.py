@@ -21,6 +21,10 @@ import os
 import sys
 sys.path.insert(0, '/home/ubuntu/for_jenkins_20181466')
 
+from recommonmark.parser import CommonMarkParser
+source_parsers = {
+        '.md': CommonMarkParser,
+}
 
 # -- General configuration ------------------------------------------------
 

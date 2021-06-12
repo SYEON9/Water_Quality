@@ -6,6 +6,18 @@
 Welcome to for_jenkins_20181466's documentation!
 ================================================
 
+.. automodule:: data_m
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+.. automodule:: connet_db
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
 .. toctree::
    :maxdepth: 4
    :caption: Contents:

@@ -1,64 +1,95 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<html lang="ko">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Welcome to for_jenkins_20181466&#39;s documentation! &#8212; for_jenkins_20181466  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/translations.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Welcome to for_jenkins_20181466’s documentation! &#8212; for_jenkins_20181466  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/translations.js"></script>
     <link rel="index" title="색인" href="genindex.html" />
     <link rel="search" title="검색" href="search.html" />
     <link rel="next" title="adam module" href="adam.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+  
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body>
+  </head><body>
   
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
-  <div class="section" id="welcome-to-for-jenkins-20181466-s-documentation">
-<h1>Welcome to for_jenkins_20181466's documentation!<a class="headerlink" href="#welcome-to-for-jenkins-20181466-s-documentation" title="제목 주소">¶</a></h1>
+  <section id="module-data_m">
+<span id="welcome-to-for-jenkins-20181466-s-documentation"></span><h1>Welcome to for_jenkins_20181466’s documentation!<a class="headerlink" href="#module-data_m" title="제목 주소">¶</a></h1>
+<dl class="py data">
+<dt class="sig sig-object py" id="data_m.My_API_Key">
+<span class="sig-prename descclassname"><span class="pre">data_m.</span></span><span class="sig-name descname"><span class="pre">My_API_Key</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'MYehZKC6rTmhPDYDSal7OnLyf3caTrsWfvoB/yIajKuZ42l51tnmlb4Y24db+b2wZC5PR8gGtGxdbWW5s82HPA=='</span></em><a class="headerlink" href="#data_m.My_API_Key" title="정의 주소">¶</a></dt>
+<dd><p>prarmeters설정</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="data_m.parameters">
+<span class="sig-prename descclassname"><span class="pre">data_m.</span></span><span class="sig-name descname"><span class="pre">parameters</span></span><em class="property"> <span class="pre">=</span> <span class="pre">{'numOfRows':</span> <span class="pre">16,</span> <span class="pre">'pageNo':</span> <span class="pre">1,</span> <span class="pre">'serviceKey':</span> <span class="pre">'MYehZKC6rTmhPDYDSal7OnLyf3caTrsWfvoB/yIajKuZ42l51tnmlb4Y24db+b2wZC5PR8gGtGxdbWW5s82HPA=='}</span></em><a class="headerlink" href="#data_m.parameters" title="정의 주소">¶</a></dt>
+<dd><p>xml file 불러오기</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="data_m.xmlUrl">
+<span class="sig-prename descclassname"><span class="pre">data_m.</span></span><span class="sig-name descname"><span class="pre">xmlUrl</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'http://opendata.kwater.or.kr/openapi-data/service/pubd/dam/effluent/damcode/list'</span></em><a class="headerlink" href="#data_m.xmlUrl" title="정의 주소">¶</a></dt>
+<dd><p>API_key 설정</p>
+</dd></dl>
+
+<span class="target" id="module-connet_db"></span><section id="connect-client">
+<h2>Connect Client<a class="headerlink" href="#connect-client" title="제목 주소">¶</a></h2>
+<p>This is code of making connetion mongoDB and client.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="connet_db.mongoTest">
+<span class="sig-prename descclassname"><span class="pre">connet_db.</span></span><span class="sig-name descname"><span class="pre">mongoTest</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/connet_db.html#mongoTest"><span class="viewcode-link"><span class="pre">[소스]</span></span></a><a class="headerlink" href="#connet_db.mongoTest" title="정의 주소">¶</a></dt>
+<dd><p>Flask를 이용한 서버구축. mongoDB에서 데이터를 불러와 화면서 출력하게 한다.</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환</dt>
+<dd class="field-odd"><p>data in mongoDB</p>
+</dd>
+<dt class="field-even">반환 형식</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="adam.html">adam module</a></li>
 </ul>
 </div>
-</div>
-<div class="section" id="indices-and-tables">
+</section>
+<section id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="제목 주소">¶</a></h1>
 <ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span class="std std-ref">색인</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">모듈 목록</span></a></li>
-<li><a class="reference internal" href="search.html"><span class="std std-ref">검색 페이지</span></a></li>
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
-</div>
+</section>
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -71,15 +102,15 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>빠른 검색</h3>
+  <h3 id="searchlabel">빠른 검색</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="바로 가기" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="바로 가기" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -88,8 +119,8 @@
       &copy;2021, Author.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.7</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="_sources/index.rst.txt"
