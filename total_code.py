@@ -185,3 +185,63 @@ df = pd.DataFrame({
     '기준값':['무미','무취','5', '5.8~8.5', '0.5', '4', '5', '6', '6']})
 
 print(df)
+
+
+
+
+'''html file 생성하기'''
+
+html_text = """
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>#3_MongoDB와 연결하기</h1>
+    <div>
+        <p>연결이 성공되면 아래에 데이터가 뜰거야!</p>
+        <p>---------------------------------------<p>
+        {% for i in data %}
+            <p>지역: {{i.name}}</p>
+            <p>정수장: {{i.purification_plant[0]}}</p>
+            <p>다목적댐: {{i.multiPurpose_dam[0]}}</p>
+            <p>---------------</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
+"""
+
+
+html_file = open('templates/html_file2.html','w')
+html_file.write(html_text2)
+html_file.close()
+
+
+
+"""mongoDB데이터를 server로 띄우기"""
+from flask import Flask, render_template, redirect, request, url_for
+from pymongo import MongoClient
+app = Flask(__name__)
+
+
+@app.route('/', methods=['GET','POST'])
+def mongoTest():
+    """Flask를 이용한 서버구축. mongoDB에서 데이터를 불러와 화면서 출력하게 한다.
+    :return: data in mongoDB
+    :rtype: list
+    """
+
+    client = MongoClient('mongodb://localhost:27017/')
+    db = client.waterData
+    collection = db.local
+    results = collection.find()
+    client.close()
+    return render_template('html_file2.html', data=results)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0',debug = True)
+
+
+
